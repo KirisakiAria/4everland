@@ -8214,9 +8214,9 @@
     "loader-utils" "^1.1.0"
     "neo-async" "^2.6.0"
 
-"three@>= 0.102.0 < 0.133.0":
-  "integrity" "sha1-lesYVhRyN8A+iHy75W+WS2+0C14="
-  "resolved" "https://registry.nlark.com/three/download/three-0.132.2.tgz?cache=0&sync_timestamp=1630061408216&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fthree%2Fdownload%2Fthree-0.132.2.tgz"
+"three@^0.132.2", "three@>= 0.102.0 < 0.133.0":
+  "integrity" "sha512-0wcR7LxxkXMn6Gi58gEs3QvY8WpTVXA31L2VOvpjm4ZPYFRHCZC13UqynheFoS5OXDYgtBneN0dhbaNBE8iLhQ=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.132.2.tgz"
   "version" "0.132.2"
 
 "through@^2.3.6":

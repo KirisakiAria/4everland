@@ -7,7 +7,9 @@
                 4everland is a Web3.0 cloud computing platform with global acceleration, privacy protection, distributed storage and other technical
                 features.
             </p>
-            <button class="button button--janus"><span>Reshape</span></button>
+            <button class="button button--janus" @click="to">
+                <span>To 4everland</span>
+            </button>
             <footer class="footer">Accelerated & hosted by 4EVERLAND</footer>
         </section>
     </section>
@@ -24,6 +26,9 @@
             return {}
         },
         methods: {
+            to() {
+                location.href = 'https://hosting.4everland.org/'
+            },
             setClass() {
                 class App {
                     constructor(container, options = {}) {
@@ -1138,6 +1143,7 @@
         }
 
         p {
+            margin-bottom: 60px;
             position: relative;
             font-size: 40px;
             width: 60%;
@@ -1154,6 +1160,30 @@
             font-family: Cairo;
         }
 
+        .button {
+            pointer-events: auto;
+            cursor: pointer;
+            background: #e7e7e7;
+            border: none;
+            padding: 1.5rem 3rem;
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            position: relative;
+            display: inline-block;
+            font-family: Cairo;
+            font-size: 20px;
+        }
+
+        .button::before,
+        .button::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .button--janus {
             font-family: freight-display-pro, serif;
             font-weight: 900;
@@ -1165,7 +1195,7 @@
 
         .button--janus::before {
             content: '';
-            background: #e6e6e6;
+            background: #fff;
             -webkit-clip-path: path(
                 'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
             );
@@ -1177,7 +1207,7 @@
         }
 
         .button--janus:hover::before {
-            background: #000;
+            background: #fff;
             -webkit-clip-path: path(
                 'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
             );
@@ -1190,7 +1220,7 @@
             width: 97%;
             top: 5%;
             border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
-            border: 1px solid #000;
+            border: 1px solid #fff;
             transform: rotate(-20deg);
             z-index: -1;
             transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
