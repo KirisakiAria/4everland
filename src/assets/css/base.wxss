@@ -1,0 +1,142 @@
+@font-face {
+  font-family: AlfaSlabOne;
+  src: url('../fonts/AlfaSlabOne-Regular.ttf');
+}
+@font-face {
+  font-family: Cairo;
+  src: url('../fonts/Cairo-SemiBold.ttf');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: auto;
+  color: inherit;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #333;
+  font-size: 0.28rem;
+  font-family: 'Arial', 'Microsoft YaHei';
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  margin: 0;
+  list-style-type: none;
+}
+a,
+label,
+input,
+span,
+img,
+select,
+i {
+  vertical-align: middle;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-weight: normal;
+  color: #232323;
+}
+h1 {
+  font-size: 0.68rem;
+}
+h2 {
+  font-size: 0.48rem;
+}
+h3 {
+  font-size: 0.38rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+h4 {
+  font-size: 0.32rem;
+}
+h5 {
+  font-size: 0.24rem;
+}
+h6 {
+  font-size: 0.2rem;
+}
+p {
+  letter-spacing: 0.6px;
+  line-height: 1.6;
+  text-align: justify;
+}
+button {
+  cursor: pointer;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.8s;
+}
+.list-leave-active {
+  position: absolute;
+}
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+}
+.list-move {
+  transition: all 0.8s;
+}
+.list2-leave-active {
+  position: absolute;
+}
+.list2-enter,
+.list2-leave-to {
+  opacity: 0;
+}
+em.red {
+  color: red;
+  font-style: normal;
+}
+/*# sourceMappingURL=./base.wxss.map */

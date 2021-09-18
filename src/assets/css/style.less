@@ -1,0 +1,96 @@
+@c: #014a96;
+
+.scale(@times) {
+  transform: scale(@times);
+}
+
+.rotate(@deg) {
+  transform: rotate(@deg);
+}
+
+.translate(@p1,@p2) {
+  transform: translate(@p1, @p2);
+}
+
+.translateX(@p) {
+  transform: translateX(@p);
+}
+
+.translateY(@p) {
+  transform: translateY(@p);
+}
+
+.transition(@time) {
+  transition: all @time ease-out 0s;
+}
+
+.br(@r: 50%) {
+  border-radius: @r;
+}
+
+.bor(@color, @width: 1px, @style: solid) {
+  border-width: @width;
+  border-style: @style;
+  border-color: @color;
+}
+
+.transition {
+  transition: all 0.3s ease-out 0s;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hc {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vc {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tn {
+  transform: none;
+}
+
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.c {
+  color: #014a96;
+}
+
+.bg {
+  background: #014a96;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a:hover {
+  .c;
+}
